@@ -48,7 +48,7 @@ userSchema.methods.comparePassword = function (password) {
 userSchema.methods.generateToken = function () {
     const { _id } = this
 
-    const token = jwt.sign({ _id }, jwtSecret);
+    const token = jwt.sign({ _id }, jwtSecret, { expiresIn: '24h' });
     console.log('token ===> ', token)
     return token
 }

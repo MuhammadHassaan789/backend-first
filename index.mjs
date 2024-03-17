@@ -1,7 +1,7 @@
 import express from 'express'
 import db from './config/db.mjs'
 import routes from './routes/index.mjs'
-import { PORT } from './config/environment'
+import { PORT } from './config/environment.mjs'
 
 const app = express()
 

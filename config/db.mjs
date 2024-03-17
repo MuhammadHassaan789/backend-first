@@ -1,5 +1,5 @@
 import mongoose from 'mongoose';
-import { MONGO_URI } from './environment';
+import { MONGO_URI } from './environment.mjs';
 
 mongoose.connect(MONGO_URI)
 
